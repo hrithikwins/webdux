@@ -15,7 +15,30 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
-    "gatsby-plugin-manifest",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "webdux-tech",
+        short_name: "webdux",
+        start_url: "/",
+        background_color: "#ff0000",
+        theme_color: "#0000ff",
+        display: "standalone",
+        icon: `src/images/icon.png`,
+        icons: [
+          {
+            src: `/favicons/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+        ],
+      },
+    },
     "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     {
