@@ -1,3 +1,5 @@
+import app from "firebase";
+
 var firebaseConfig = {
   apiKey: "AIzaSyBZEAzgPFpxTb1RRFEXu3OC6NE5uBSBdug",
   authDomain: "web-dux.firebaseapp.com",
@@ -8,3 +10,8 @@ var firebaseConfig = {
   appId: "1:336380058838:web:bee7b05f4a25eb8c94bd77",
   measurementId: "G-1KMJ7B9EGG",
 };
+
+
+export default FirebaseApp(){
+    firebase.initializeApp(config);
+}
